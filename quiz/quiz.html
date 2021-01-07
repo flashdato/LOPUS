@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+	<title>Quiz</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <div class="home-box costom-box">
+	  <h3>ინსტრუქცია:</h3>
+	  <p>კითხვების რაოდენობა: <span class="total-questions"></span></span></p>
+	  <p>კითხვებზე უკან დაბრუნება არ შეგიძლიათ </p>
+	  <p>სავარაუდო პასუხის არჩევა შეგიძლიათ მხოლოდ ერთხელ  </p>
+	  <button type="button" class="btn" onclick="startQuiz()" >დაწყება</button> 
+	  <a class="backbtn" href="C:\Users\flash\Desktop\VSC projects\main.html">დაბრუნება მთავარ გვერძე</a>
+	</div>
+  <div class="quiz-box costom-box hide">
+    <div class="question-number">
+		
+	</div>
+	<div class="question-text">
+      
+	</div>
+	<div class="option-container">
+	
+	</div>
+	<div class="next-question-button">
+		 <button type="button" class="btn" onclick="next()">შემდეგი</button>
+		 <button type="button" class="bbtn" onclick="quizOver()">დასრულება</button>
+	</div>
+	<div class="answers-indicator">
+		
+	</div>
+  </div>
+<div class="result-box costom-box hide">
+   <h1>შედეგები</h1>
+   <table>
+           <tr>
+			   <td>კითხვების რაოდენობა</td>
+			   <td><span class="total-question"></span></td>
+		   </tr>
+		   <tr>
+			<td>გაცემული კითხვების რაოდენობა</td>
+			<td><span class="total-attempt"></span></td>
+		   </tr>
+		   <tr>
+			<td>სწორი პასუხიები</td>
+			<td><span class="total-correct"></span></td>
+		   </tr>
+		   <tr>
+			<td>არასწორი პასუხები</td>
+			<td><span class="total-wrong"></span></td>
+		   </tr>
+		   <tr>
+			<td>პროცენტი %</td>
+			<td><span class="percentage"></span></td>
+		   </tr>
+		   <tr>
+			<td>თქვენი ქულა</td>
+			<td><span class="total-score"></span></td>
+		   </tr>
+   </table>
+   <button type="button" class="btn" onclick="tryAgainQuiz()">ცადეთ თავიდან</button>
+   <button type="button" class="btn" onclick="goToHome()">დაბრუნება</button>
+</div>
+
+
+<script src="js/question.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+

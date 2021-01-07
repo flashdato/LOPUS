@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon"  type="image/png" sizes="16×16" href="photos/logo1.png">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="C:\Users\flash\Desktop\VSC projects\main.html">LOPUS</a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="C:\Users\flash\Desktop\VSC projects\main.html">მთავარი</a></li>
+          <li><a href="C:\Users\flash\Desktop\VSC projects\about\about.html">ჩვენ შესახებ</a></li>
+          <li><a href="C:\Users\flash\Desktop\VSC projects\quiz\quiz.html">ტესტირება</a></li>
+          <li><a href="C:\Users\flash\Desktop\VSC projects\login\login.html">შესვლა/რეგისტრაცია</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="banner"></div>
+<div class="box">
+  <img src="2.png" alt="" class="box-img">
+  <h1>დავით ყაველაშვილი</h1>
+<h5>
+Web Devloper - Web Designer</h5>
+<p>
+A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications, or applications that are run over HTTP from a web server to a web browser.</p>
+<ul>
+<li><a href="https://www.facebook.com/profile.php?id=100011076887513"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+<li><a href="https://mail.google.com/mail/u/3/#inbox"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+<script>
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = ()=>{
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+</body>
+</html>
+
