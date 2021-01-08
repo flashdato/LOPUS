@@ -76,9 +76,6 @@ function stopWatch(){
         displayHours = hours;
     }
 
-    if(hours==3)
-     quizOver();
-
     //Display updated time values to user
     document.getElementById("display").innerHTML = "დარჩენილია : 0" + displayHoursL + ":" + displayMinutesL + ":" + displaySecondsL;
 
