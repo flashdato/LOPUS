@@ -109,7 +109,7 @@ display: none;
 }
 .quiz-box .displayTime{
     margin-right: 0px;
-    margin-left: 65%;
+    margin-left: 63%;
     font-size: 20px;
     color: #009688;
     font-weight: 700;
@@ -297,5 +297,5 @@ animation: slideInLeft .5s ease forwards;
     .home-box h3{
         margin-left: 25%;
     }
-
+   
 }
