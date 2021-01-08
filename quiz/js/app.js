@@ -78,6 +78,7 @@ function stopWatch(){
 
     //Display updated time values to user
     document.getElementById("display").innerHTML = "დარჩენილია : 0" + displayHoursL + ":" + displayMinutesL + ":" + displaySecondsL;
+    console.debug("დარჩენილია : 0" + displayHoursL + ":" + displayMinutesL + ":" + displaySecondsL);
 
 }
 function startStopTimer(){
