@@ -211,5 +211,9 @@ body.disabled{
   margin-top: 100px;
   margin-bottom: 30px;
 }
+.box h1{
+  font-size: 18px;
+  height: 30px;
+}
 }
   
