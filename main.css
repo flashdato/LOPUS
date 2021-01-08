@@ -148,6 +148,12 @@
   .navbar .logo a{
     font-size: 27px;
   }
+ .about .title{
+    font-size: 28px;
+ }
+ .about .p{
+  font-size: 18px;
+}
 }
 /* #slider {
   margin: 0 auto;
