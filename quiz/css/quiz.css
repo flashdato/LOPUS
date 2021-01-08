@@ -287,13 +287,16 @@ animation: slideInLeft .5s ease forwards;
     }
     .quiz-box .displayTime{
         font-size: 16px;
-        margin-left: 40%;
+        margin-left: 0px;
     }
     .btn{
         width: 100%;
     }
+    .quiz-box .bbtn{
+        width: 100%;
+    }
     .home-box h3{
-        align-content: center;
+        margin-left: 50%;
     }
 
 }
