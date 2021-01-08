@@ -75,10 +75,11 @@ function stopWatch(){
     else{
         displayHours = hours;
     }
-
+    if(hours==3){
+        quizOver();
+    }
     //Display updated time values to user
     document.getElementById("display").innerHTML = "დარჩენილია : 0" + displayHoursL + ":" + displayMinutesL + ":" + displaySecondsL;
-    console.debug("დარჩენილია : 0" + displayHoursL + ":" + displayMinutesL + ":" + displaySecondsL);
 
 }
 function startStopTimer(){
@@ -117,7 +118,6 @@ function setAvailableQuestions(){
    }
 }
 function getNewQuestion(){
-    console.log(avaliableQuestions);
   questionNumber.innerHTML = "ამოცანა " + (questionCounter + 1) + " / " + questionLimit;
 
   const questionIndex = avaliableQuestions[Math.floor(Math.random() * avaliableQuestions.length)];
