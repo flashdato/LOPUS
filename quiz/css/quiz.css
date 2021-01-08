@@ -200,6 +200,7 @@ animation: slideInLeft .5s ease forwards;
    margin-right: 290px;
 }
 .quiz-box .bbtn{
+    margin-bottom: 10px;
     background-color: red;
     margin-block-start: 20px;
     padding: 15px 45px;
@@ -288,4 +289,11 @@ animation: slideInLeft .5s ease forwards;
         font-size: 16px;
         margin-left: 40%;
     }
+    .btn{
+        width: 100%;
+    }
+    .home-box h3{
+        align-content: center;
+    }
+
 }
