@@ -27,9 +27,7 @@ let interval = null;
 //Define var to hold stopwatch status
 let status = "stopped";
 function stopWatch(){
-
     seconds++;
-
     //Logic to determine when to increment next value
     if(seconds / 60 === 1){
         seconds = 0;
@@ -41,7 +39,6 @@ function stopWatch(){
         }
 
     }
-
     //If seconds/minutes/hours are only one digit, add a leading 0 to the value     LEFT
     if(seconds > 50){
         displaySecondsL = "0" + (59-seconds).toString();
@@ -79,6 +76,8 @@ function stopWatch(){
         displayHours = hours;
     }
 
+    if(hours==3)
+     quizOver();
 
     //Display updated time values to user
     document.getElementById("display").innerHTML = "დარჩენილია : 0" + displayHoursL + ":" + displayMinutesL + ":" + displaySecondsL;
