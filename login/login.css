@@ -63,6 +63,7 @@ body{
 @media only screen and (max-width: 1200px)
 {
   .box{
+    margin-top: 20px;
     height: max-content;
     min-width: 300px ;
   }
@@ -71,6 +72,7 @@ body{
 @media only screen and (max-width: 400px)
 {
   .box{
+    margin-top: 20px;
     height: max-content;
     min-width: 250px ;
   }
