@@ -285,8 +285,7 @@ animation: slideInLeft .5s ease forwards;
       font-size: 16px;
     }
     .quiz-box .displayTime{
-        font-size: 16px;
-        margin-left: 10%;
+        font-size: 15px;
     }
     .btn{
         width: 100%;
