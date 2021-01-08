@@ -13,7 +13,105 @@ let avaliableQuestions = [];
 let avaliableOptions = [];
 let correctAnswers =0;
 let attempt = 0;
- 
+ //timer
+ //Define vars to hold time values
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
+//Define vars to hold "display" value
+let displaySeconds = 0;
+let displayMinutes = 0;
+let displayHours = 0;
+//Define var to hold setInterval() function
+let interval = null;
+//Define var to hold stopwatch status
+let status = "stopped";
+function stopWatch(){
+
+    seconds++;
+
+    //Logic to determine when to increment next value
+    if(seconds / 60 === 1){
+        seconds = 0;
+        minutes++;
+
+        if(minutes / 60 === 1){
+            minutes = 0;
+            hours++;
+        }
+
+    }
+
+    //If seconds/minutes/hours are only one digit, add a leading 0 to the value     LEFT
+    if(seconds > 50){
+        displaySecondsL = "0" + (59-seconds).toString();
+    }
+    else{
+        displaySecondsL = 59-seconds;
+    }
+
+    if(minutes > 50){
+        displayMinutesL = "0" + (59-minutes).toString();
+    }
+    else{
+        displayMinutesL = 59 - minutes;
+    }
+    displayHoursL = 2-hours;
+
+    if(seconds < 10){
+        displaySeconds = "0" + seconds.toString();
+    }
+    else{
+        displaySeconds = seconds;
+    }
+    //If seconds/minutes/hours are only one digit, add a leading 0 to the value
+    if(minutes < 10){
+        displayMinutes = "0" + minutes.toString();
+    }
+    else{
+        displayMinutes = minutes;
+    }
+
+    if(hours < 10){
+        displayHours = "0" + hours.toString();
+    }
+    else{
+        displayHours = hours;
+    }
+
+
+    //Display updated time values to user
+    document.getElementById("display").innerHTML = "დარჩენილია : 0" + displayHoursL + ":" + displayMinutesL + ":" + displaySecondsL;
+
+}
+function startStopTimer(){
+    if(status === "stopped"){
+        //Start the stopwatch (by calling the setInterval() function)
+        interval = window.setInterval(stopWatch, 1);
+        document.getElementById("startStop").innerHTML = "Stop";
+        status = "started";
+
+    }
+    else{
+
+        window.clearInterval(interval);
+        document.getElementById("startStop").innerHTML = "Start";
+        status = "stopped";
+
+    }
+
+}
+function resetTimer(){
+
+    window.clearInterval(interval);
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    document.getElementById("display").innerHTML = "00:00:00";
+    document.getElementById("startStop").innerHTML = "Start";
+
+}
+
 
 function setAvailableQuestions(){
    const totalQuestion = quiz.length;
@@ -116,9 +214,9 @@ function next(){
 }
 
 function quizOver(){
-quizBox.classList.add("hide");
-resultBox.classList.remove("hide")
-quizResult();
+    quizBox.classList.add("hide");
+    resultBox.classList.remove("hide")
+    quizResult();
 }
 function quizResult(){
     resultBox.querySelector(".total-question").innerHTML = questionLimit;
@@ -127,12 +225,14 @@ function quizResult(){
     resultBox.querySelector(".total-wrong").innerHTML = attempt - correctAnswers;
     resultBox.querySelector(".percentage").innerHTML = ((correctAnswers/questionLimit)*100).toFixed(2) + "%";
     resultBox.querySelector(".total-score").innerHTML = correctAnswers + " / " + questionLimit;
+    resultBox.querySelector(".total-time").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
 }
 function resetQuiz(){
     questionCounter = 0;
     correctAnswers =0;
     attempt = 0;  
-    avaliableQuestions = [];  
+    avaliableQuestions = []; 
+    resetTimer(); 
 }
 
 function tryAgainQuiz(){
@@ -147,11 +247,12 @@ function goToHome(){
     resetQuiz();
 }
  function startQuiz(){
-     homeBox.classList.add("hide");
-     quizBox.classList.remove("hide");
+    homeBox.classList.add("hide");
+    quizBox.classList.remove("hide");
     setAvailableQuestions();
     getNewQuestion();
     answersIndicator();
+    startStopTimer();
 }
 window.onload = function(){
     homeBox.querySelector(".total-questions").innerHTML = questionLimit;
