@@ -216,6 +216,7 @@ function quizOver(){
     quizBox.classList.add("hide");
     resultBox.classList.remove("hide")
     quizResult();
+    resetTimer();
 }
 function quizResult(){
     resultBox.querySelector(".total-question").innerHTML = questionLimit;
