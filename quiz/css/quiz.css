@@ -283,11 +283,11 @@ animation: slideInLeft .5s ease forwards;
 @media(max-width: 400px){
     .quiz-box .question-number{
       font-size: 16px;
-
+      margin-left: 20%;
     }
     .quiz-box .displayTime{
         font-size: 16px;
-        margin-left: 0px;
+        margin-left: 10%;
     }
     .btn{
         width: 100%;
@@ -296,7 +296,7 @@ animation: slideInLeft .5s ease forwards;
         width: 100%;
     }
     .home-box h3{
-        margin-left: 30%;
+        margin-left: 25%;
     }
 
 }
