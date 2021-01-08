@@ -67,6 +67,12 @@ body{
     max-width: 300px; ;
     } 
 }
+@media only screen and (max-width: 400px)
+{
+  .box{
+     height: 30px;
+    } 
+}
 /*navbar*/
 /* custom scroll bar */
 ::-webkit-scrollbar {
