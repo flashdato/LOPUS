@@ -44,9 +44,14 @@ body{
   .box li{
     display: inline-block;
     margin: 6px;
+    margin-left: 20px;
     list-style: none;
   }
- 
+  .box li a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+  } 
  /* navbar*/
  ::-webkit-scrollbar {
   width: 10px;
