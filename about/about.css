@@ -220,5 +220,8 @@ body.disabled{
   font-size: 18px;
   height: 30px;
 }
+.box li a{
+ font-size: 30px; 
+}
 }
   
