@@ -49,15 +49,15 @@ const quiz = [
     //   options:[' ∣ 𝒂 ∣>∣ 𝒃 ∣',' ∣ 𝒂 ∣<∣ 𝒃 ∣ ',' ∣ 𝒂 ∣=∣ 𝒃 ∣ ','არცერთი'],
     //   answer: 3
     // },
-    {
-      q: ' რამდენი კვადრატია სურათში',
-      options:['7','9','12','13'],
-      answer: 3,
-      img:'img/square.jpg'
-    },
+    // {
+    //   q: ' რამდენი კვადრატია სურათში',
+    //   options:['7','9','12','13'],
+    //   answer: 3,
+    //   img:'img/square.jpg'
+    // },
     { q:'',
       options:['ა','ბ','გ','დ','ე','ვ'],
-      answer: 0,
+      answer: 4,
       img:'screens/1.png'
     },
     { 
@@ -69,17 +69,17 @@ const quiz = [
     { 
       q:'',
       options:['ა','ბ','გ','დ','ე','ვ'],
-      answer: 0,
-    img:'screens/3.png'
+      answer: 4,
+      img:'screens/3.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 5,
     img:'screens/4.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 3,
     img:'screens/5.png'
     },
     { q:'',
@@ -89,17 +89,17 @@ const quiz = [
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 4,
     img:'screens/7.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 1,
     img:'screens/8.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 2,
     img:'screens/9.png'
     },
     { q:'',
@@ -109,32 +109,32 @@ const quiz = [
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 3,
     img:'screens/11.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 4,
     img:'screens/12.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 2,
     img:'screens/13.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 1,
     img:'screens/14.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 5,
     img:'screens/15.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 1,
     img:'screens/16.png'
     },
     { q:'',
@@ -144,22 +144,22 @@ const quiz = [
     },
     {q:'',
      options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 3,
     img:'screens/18.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 4,
     img:'screens/19.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 2,
     img:'screens/20.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 3,
     img:'screens/21.png'
     },
     { q:'',
@@ -169,17 +169,17 @@ const quiz = [
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 4,
     img:'screens/23.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 2,
     img:'screens/24.png'
     },
     { q:'',
     options:['ა','ბ','გ','დ','ე','ვ'],
-    answer: 0,
+    answer: 5,
     img:'screens/25.png'
     }
     

@@ -110,10 +110,10 @@ display: none;
 .quiz-box .displayTime{
     margin-right: 0px;
     margin-left: 63%;
+    margin-bottom: 0px;
     font-size: 20px;
     color: #009688;
     font-weight: 700;
-    padding-bottom: 10px;
     line-height: 25px;
 }
 .quiz-box .question-text{
@@ -126,9 +126,9 @@ display: none;
 
 }
 .quiz-box .question-text img{
-max-width: 100%;
-display: block;
-margin-top: 15px;
+    width: 100%;
+    display: block;
+    margin-top: 15px;
 
 
 }
@@ -271,7 +271,13 @@ animation: slideInLeft .5s ease forwards;
     margin-right: 20px;
 
 }
+@media (max-width: 868px) {
+    .quiz-box .displayTime{
+       margin-left: 43%;
 
+
+    }
+}
 @media(max-width: 767px){
     .result-box .btn{
         margin-bottom: 15px;
@@ -280,7 +286,15 @@ animation: slideInLeft .5s ease forwards;
         padding: 15px;
     }
 }
-@media(max-width: 400px){
+@media(max-width: 500px){
+    .quiz-box .option-container .option{
+        line-height: 12px;
+        margin-bottom: 6px;
+    }
+    .quiz-box .answers-indicator div{
+        height: 20px;
+        width: 20px;
+    }
     .quiz-box .question-number{
       font-size: 16px;
     }
