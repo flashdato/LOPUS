@@ -274,8 +274,11 @@ animation: slideInLeft .5s ease forwards;
 @media (max-width: 868px) {
     .quiz-box .displayTime{
        margin-left: 43%;
-
-
+    }
+    .quiz-box .option-container .option{
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 8px;
     }
 }
 @media(max-width: 767px){
@@ -288,8 +291,12 @@ animation: slideInLeft .5s ease forwards;
 }
 @media(max-width: 500px){
     .quiz-box .option-container .option{
-        line-height: 12px;
-        margin-bottom: 6px;
+        font-size: 10px;
+        line-height: 8px;
+        margin-bottom: 4px;
+    }
+    .quiz-box .question-text img{
+        height: 30px;
     }
     .quiz-box .answers-indicator div{
         height: 20px;
