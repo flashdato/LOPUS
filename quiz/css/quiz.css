@@ -311,9 +311,11 @@ animation: slideInLeft .5s ease forwards;
     }
     .btn{
         width: 100%;
+        margin-bottom: 8px;
     }
     .quiz-box .bbtn{
         width: 100%;
+        margin-bottom: 8px;
     }
     .home-box h3{
         margin-left: 25%;
