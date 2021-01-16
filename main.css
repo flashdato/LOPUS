@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-/* custom scroll bar */
+/* custom scroll bar
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -153,8 +153,8 @@
  }
  .about .p{
   font-size: 18px;
- }
-}
+ } 
+}*/
 /* #slider {
   margin: 0 auto;
   width: 100%;
