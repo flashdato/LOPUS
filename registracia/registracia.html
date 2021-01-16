@@ -8,27 +8,15 @@
     <script defer src="registracia.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="icon"  type="image/png" sizes="16×16" href="photos/logo1.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#Nav").load('..\NavBar\NavBar.html'); 
+    });
+    </script> 
 </head>
 <body>
-    <nav class="navbar">
-        <div class="content">
-          <div class="logo">
-            <a href="../main.html">LOPUS</a>
-          </div>
-          <ul class="menu-list">
-            <div class="icon cancel-btn">
-              <i class="fas fa-times"></i>
-            </div>
-            <li><a href="../main.html">მთავარი</a></li>
-            <li><a href="../about/about.html">ჩვენ შესახებ</a></li>
-            <li><a href="../quiz/quiz.html">ტესტირება</a></li>
-            <li><a href="../login/login.html">შესვლა/რეგისტრაცია</a></li>
-          </ul>
-          <div class="icon menu-btn">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </nav>
+  <div id="Nav"></div>
     <script type="text/javascript">var submitted=false;</script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='../main.html'}"></iframe>    
     <form class="box" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSenuK9to8aW4mANYt7swvvARSZ2KkvAdrtaZiwnbyOhYTMgOw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" id="form" >
@@ -43,24 +31,6 @@
         <br>
         <input type="submit" value="რეგისტრაცია">
       </form>
-      <script>
-        const body = document.querySelector("body");
-        const navbar = document.querySelector(".navbar");
-        const menuBtn = document.querySelector(".menu-btn");
-        const cancelBtn = document.querySelector(".cancel-btn");
-        menuBtn.onclick = ()=>{
-          navbar.classList.add("show");
-          menuBtn.classList.add("hide");
-          body.classList.add("disabled");
-        }
-        cancelBtn.onclick = ()=>{
-          body.classList.remove("disabled");
-          navbar.classList.remove("show");
-          menuBtn.classList.remove("hide");
-        }
-        window.onscroll = ()=>{
-          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-        }
-      </script>
+
 </body>
 </html>

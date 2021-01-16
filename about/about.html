@@ -7,27 +7,15 @@
     <link rel="stylesheet" href="about.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="icon"  type="image/png" sizes="16×16" href="photos/logo1.png">
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="content">
-        <div class="logo">
-          <a href="../main.html">LOPUS</a>
-        </div>
-        <ul class="menu-list">
-          <div class="icon cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
-          <li><a href="../main.html">მთავარი</a></li>
-          <li><a href="../about/about.html">ჩვენ შესახებ</a></li>
-          <li><a href="../quiz/quiz.html">ტესტირება</a></li>
-          <li><a href="../login/login.html">შესვლა/რეგისტრაცია</a></li>
-        </ul>
-        <div class="icon menu-btn">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#Nav").load('..\NavBar\NavBar.html'); 
+    });
+    </script> 
+</head>
+<body>
+  <div id="Nav"></div>
     <div class="banner"></div>
 <div class="box">
   <img src="2.png" alt="" class="box-img">
@@ -41,25 +29,6 @@ A web developer is a programmer who specializes in, or is specifically engaged i
 <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNxNXRjMSCrzjtrkhMrFcqTrnCwktQQSjrTdfStFWqzQplxMnJDRZcSlBXvCxxXfxGlwgq"><i class="fab fa-google-plus-square"></i></a></li>
 </ul>
 </div>
-<script>
-  const body = document.querySelector("body");
-  const navbar = document.querySelector(".navbar");
-  const menuBtn = document.querySelector(".menu-btn");
-  const cancelBtn = document.querySelector(".cancel-btn");
-  menuBtn.onclick = ()=>{
-    navbar.classList.add("show");
-    menuBtn.classList.add("hide");
-    body.classList.add("disabled");
-  }
-  cancelBtn.onclick = ()=>{
-    body.classList.remove("disabled");
-    navbar.classList.remove("show");
-    menuBtn.classList.remove("hide");
-  }
-  window.onscroll = ()=>{
-    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-  }
-</script>
 </body>
 </html>
 
