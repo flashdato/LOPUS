@@ -40,36 +40,35 @@ function stopWatch(){
 
     }
     //If seconds/minutes/hours are only one digit, add a leading 0 to the value     LEFT
-    if(seconds > 50){
+    if(seconds => 50){
         displaySecondsL = "0" + (59-seconds).toString();
     }
     else{
         displaySecondsL = 59-seconds;
     }
 
-    if(minutes > 50){
+    if(minutes => 50){
         displayMinutesL = "0" + (59-minutes).toString();
     }
     else{
         displayMinutesL = 59 - minutes;
     }
     displayHoursL = 2-hours;
-
+ //If seconds/minutes/hours are only one digit, add a leading 0 to the value
     if(seconds <= 10){
         displaySeconds = "0" + seconds.toString();
     }
     else{
         displaySeconds = seconds;
     }
-    //If seconds/minutes/hours are only one digit, add a leading 0 to the value
-    if(minutes < 10){
+    if(minutes <= 10){
         displayMinutes = "0" + minutes.toString();
     }
     else{
         displayMinutes = minutes;
     }
 
-    if(hours <= 10){
+    if(hours < 10){
         displayHours = "0" + hours.toString();
     }
     else{
