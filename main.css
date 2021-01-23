@@ -6,11 +6,11 @@
   font-family: 'Poppins', sans-serif;
 }
 .content{
-  height: 300px;
   background:transparent;
   max-width: 1250px;
   margin: auto;
   padding: 0 30px;
+  margin-bottom: 10px;
 }
 .content2{
 
