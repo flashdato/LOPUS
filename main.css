@@ -11,6 +11,13 @@
   margin: auto;
   padding: 0 30px;
 }
+.content2{
+
+  background:transparent;
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
 .banner{
   background: url("photos/banner1.jpg") no-repeat;
   height: 70vh;
@@ -30,18 +37,27 @@ ul{
   margin: 0;
   padding: 0;
 }
-.content li{
+.about2{
+  background-color: rgb(187, 177, 177);
+  padding: 30px 0;
+  text-align: justify;
+}
+.about2 .title{
+  font-size: 30px;
+  font-weight: 300;
+}
+.content2 li{
   display: inline-block;
   margin: 6px;
   list-style: none;
 }
-.content li a{
+.content2 li a{
   color: black;
   text-decoration: none;
   font-size: 60px;
   transition: all ease-in-out 250ms;
 }
-.content li a:hover{
+.content2 li a:hover{
   color: #b9b9b9;
 }
 @media (max-width: 1230px) {
