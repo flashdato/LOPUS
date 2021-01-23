@@ -55,13 +55,13 @@ function stopWatch(){
     }
     displayHoursL = 2-hours;
  //If seconds/minutes/hours are only one digit, add a leading 0 to the value
-    if(seconds <= 10){
+    if(seconds < 10){
         displaySeconds = "0" + seconds.toString();
     }
     else{
         displaySeconds = seconds;
     }
-    if(minutes <= 10){
+    if(minutes < 10){
         displayMinutes = "0" + minutes.toString();
     }
     else{
