@@ -40,14 +40,14 @@ function stopWatch(){
 
     }
     //If seconds/minutes/hours are only one digit, add a leading 0 to the value     LEFT
-    if(seconds => 50){
+    if(seconds > 49){
         displaySecondsL = "0" + (59-seconds).toString();
     }
     else{
         displaySecondsL = 59-seconds;
     }
 
-    if(minutes => 50){
+    if(minutes > 49){
         displayMinutesL = "0" + (59-minutes).toString();
     }
     else{
