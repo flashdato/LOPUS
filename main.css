@@ -13,7 +13,6 @@
   margin-bottom: 10px;
 }
 .content2{
-
   background:transparent;
   max-width: 1250px;
   margin: auto;
@@ -31,6 +30,10 @@
   text-align: justify;
 }
 .about .title{
+  font-size: 38px;
+  font-weight: 300;
+}
+.about2 .title2{
   font-size: 38px;
   font-weight: 300;
 }
