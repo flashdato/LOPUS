@@ -55,7 +55,7 @@ function stopWatch(){
     }
     displayHoursL = 2-hours;
 
-    if(seconds < 10){
+    if(seconds <= 10){
         displaySeconds = "0" + seconds.toString();
     }
     else{
@@ -69,7 +69,7 @@ function stopWatch(){
         displayMinutes = minutes;
     }
 
-    if(hours < 10){
+    if(hours <= 10){
         displayHours = "0" + hours.toString();
     }
     else{
