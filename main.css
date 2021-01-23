@@ -29,6 +29,11 @@
   padding: 30px 0;
   text-align: justify;
 }
+.about2{
+  background-color: rgb(187, 177, 177);
+  padding: 30px 0;
+  text-align: justify;
+}
 .about .title{
   font-size: 38px;
   font-weight: 300;
@@ -40,15 +45,6 @@
 ul{
   margin: 0;
   padding: 0;
-}
-.about2{
-  background-color: rgb(187, 177, 177);
-  padding: 30px 0;
-  text-align: justify;
-}
-.about2 .title{
-  font-size: 30px;
-  font-weight: 300;
 }
 .content2 li{
   display: inline-block;
@@ -62,6 +58,20 @@ ul{
   transition: all ease-in-out 250ms;
 }
 .content2 li a:hover{
+  color: #b9b9b9;
+}
+.content li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.content li a{
+  color: black;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.content li a:hover{
   color: #b9b9b9;
 }
 @media (max-width: 1230px) {
