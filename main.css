@@ -6,6 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 .content{
+  height: 300px;
   background:transparent;
   max-width: 1250px;
   margin: auto;
