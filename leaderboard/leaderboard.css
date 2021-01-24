@@ -36,7 +36,7 @@
   .content-table {
     margin: 25px 0;
     font-size: 16px;
-    min-width: 750px;
+    max-width: 750px;
     border-radius: 10px ;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
