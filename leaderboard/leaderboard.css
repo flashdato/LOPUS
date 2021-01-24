@@ -99,7 +99,7 @@
   .content-table {
     margin: 20px 0;
     font-size: 14px;
-    max-width: 640px;
+    min-width: 640px;
   }
  }
   @media (max-width: 400px) {
@@ -115,7 +115,7 @@
   .content-table {
     margin: 20px 0;
     font-size: 14px;
-    max-width: 340px;
+    min-width: 340px;
   }
   
   }
