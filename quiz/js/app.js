@@ -145,6 +145,7 @@ function getNewQuestion(){
     const optionIndex = avaliableOptions[Math.floor(Math.random() * avaliableOptions.length)];   
     const index2 = avaliableOptions.indexOf(optionIndex); 
     avaliableOptions.splice(index2,1)
+    //  const option = document.createElement("img"); if you want images as answers 
     const option = document.createElement("div");
     option.innerHTML = currentQuestion.options[optionIndex];
     option.id = optionIndex;
