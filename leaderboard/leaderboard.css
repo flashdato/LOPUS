@@ -1,0 +1,72 @@
+* {
+    font-family: sans-serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: url(../photos/banner1.jpg) no-repeat;
+    background-size: cover;
+    
+  }
+  .btn{
+    
+    padding: 15px 45px;
+    background-color: #009688;
+    font-family: 'Montserrat',sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+  .costom-box {
+    max-width: 800px;
+    background-color:  #e6e6e6;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+
+}
+  .content-table {
+    margin: 25px 0;
+    font-size: 16px;
+    min-width: 750px;
+    border-radius: 10px ;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    border-color: white;
+    background-color:  #009688;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: rgb(195, 233, 250);
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color:  #8fdcfd;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid  #009688;
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color:  #009688;
+  }
+  
