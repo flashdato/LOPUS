@@ -1,11 +1,7 @@
 * {
     font-family: sans-serif;
-    margin: 0px;
-    padding: 0px;
   }
   body{
-    margin: 0px;
-    padding: 0px;
     background: url(../photos/banner1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,9 +101,7 @@
     font-size: 14px;
     max-width: 640px;
   }
-    
-   
-  }
+ }
   @media (max-width: 400px) {
     .btn{
       padding: 10px 30px;
